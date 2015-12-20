@@ -1,0 +1,94 @@
+22190 execve("/bin/sh", ["sh", "-c", "tr hb HB < out/f50.txt"], [/* 67 vars */]) = 0
+22190 brk(0)                            = 0xb8d72000
+22190 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22190 mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb7731000
+22190 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22190 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22190 fstat64(3, {st_mode=S_IFREG|0644, st_size=70935, ...}) = 0
+22190 mmap2(NULL, 70935, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb771f000
+22190 close(3)                          = 0
+22190 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22190 open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22190 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\340\233\1\0004\0\0\0"..., 512) = 512
+22190 fstat64(3, {st_mode=S_IFREG|0755, st_size=1758972, ...}) = 0
+22190 mmap2(NULL, 1763964, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb7570000
+22190 mmap2(0xb7719000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a9000) = 0xb7719000
+22190 mmap2(0xb771c000, 10876, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb771c000
+22190 close(3)                          = 0
+22190 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb756f000
+22190 set_thread_area({entry_number:-1 -> 6, base_addr:0xb756f940, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+22190 mprotect(0xb7719000, 8192, PROT_READ) = 0
+22190 mprotect(0xb7771000, 4096, PROT_READ) = 0
+22190 mprotect(0xb7754000, 4096, PROT_READ) = 0
+22190 munmap(0xb771f000, 70935)         = 0
+22190 getpid()                          = 22190
+22190 rt_sigaction(SIGCHLD, {0xb7766ca0, ~[RTMIN RT_1], 0}, NULL, 8) = 0
+22190 geteuid32()                       = 1000
+22190 brk(0)                            = 0xb8d72000
+22190 brk(0xb8d93000)                   = 0xb8d93000
+22190 getppid()                         = 22185
+22190 stat64("/home/ubuntu/cs61-psets/pset4", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+22190 stat64(".", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+22190 rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+22190 rt_sigaction(SIGINT, {0xb7766ca0, ~[RTMIN RT_1], 0}, NULL, 8) = 0
+22190 rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+22190 rt_sigaction(SIGQUIT, {SIG_DFL, ~[RTMIN RT_1], 0}, NULL, 8) = 0
+22190 rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+22190 rt_sigaction(SIGTERM, {SIG_DFL, ~[RTMIN RT_1], 0}, NULL, 8) = 0
+22190 open("out/f50.txt", O_RDONLY|O_LARGEFILE) = 3
+22190 fcntl64(0, F_DUPFD, 10)           = 10
+22190 close(0)                          = 0
+22190 fcntl64(10, F_SETFD, FD_CLOEXEC)  = 0
+22190 dup2(3, 0)                        = 0
+22190 close(3)                          = 0
+22190 stat64("/usr/local/sbin/tr", 0xbf848a90) = -1 ENOENT (No such file or directory)
+22190 stat64("/usr/local/bin/tr", 0xbf848a90) = -1 ENOENT (No such file or directory)
+22190 stat64("/usr/sbin/tr", 0xbf848a90) = -1 ENOENT (No such file or directory)
+22190 stat64("/usr/bin/tr", {st_mode=S_IFREG|0755, st_size=42692, ...}) = 0
+22190 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xb756f9a8) = 22191
+22190 wait4(-1,  <unfinished ...>
+22191 execve("/usr/bin/tr", ["tr", "hb", "HB"], [/* 67 vars */]) = 0
+22191 brk(0)                            = 0x8c3f000
+22191 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22191 mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb779e000
+22191 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22191 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22191 fstat64(3, {st_mode=S_IFREG|0644, st_size=70935, ...}) = 0
+22191 mmap2(NULL, 70935, PROT_READ, MAP_PRIVATE, 3, 0) = 0xb778c000
+22191 close(3)                          = 0
+22191 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22191 open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22191 read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\340\233\1\0004\0\0\0"..., 512) = 512
+22191 fstat64(3, {st_mode=S_IFREG|0755, st_size=1758972, ...}) = 0
+22191 mmap2(NULL, 1763964, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xb75dd000
+22191 mmap2(0xb7786000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a9000) = 0xb7786000
+22191 mmap2(0xb7789000, 10876, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xb7789000
+22191 close(3)                          = 0
+22191 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb75dc000
+22191 set_thread_area({entry_number:-1 -> 6, base_addr:0xb75dc940, limit:1048575, seg_32bit:1, contents:0, read_exec_only:0, limit_in_pages:1, seg_not_present:0, useable:1}) = 0
+22191 mprotect(0xb7786000, 8192, PROT_READ) = 0
+22191 mprotect(0x8052000, 4096, PROT_READ) = 0
+22191 mprotect(0xb77c1000, 4096, PROT_READ) = 0
+22191 munmap(0xb778c000, 70935)         = 0
+22191 brk(0)                            = 0x8c3f000
+22191 brk(0x8c60000)                    = 0x8c60000
+22191 fadvise64_64(0, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+22191 read(0, "hello\nbye\n", 8192)     = 10
+22191 fstat64(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0
+22191 mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb779d000
+22191 write(1, "Hello\n", 6)            = 6
+22191 write(1, "Bye\n", 4)              = 4
+22191 read(0, "", 8192)                 = 0
+22191 close(0)                          = 0
+22191 close(1)                          = 0
+22191 munmap(0xb779d000, 4096)          = 0
+22191 close(2)                          = 0
+22191 exit_group(0)                     = ?
+22191 +++ exited with 0 +++
+22190 <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 22191
+22190 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=22191, si_status=0, si_utime=0, si_stime=0} ---
+22190 sigreturn() (mask [])             = 22191
+22190 dup2(10, 0)                       = 0
+22190 close(10)                         = 0
+22190 exit_group(0)                     = ?
+22190 +++ exited with 0 +++

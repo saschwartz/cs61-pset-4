@@ -1,0 +1,14 @@
+  PID TTY      STAT   TIME COMMAND
+ 1542 pts/4    S      0:00 make check
+ 1574 pts/4    S      0:00 perl check.pl
+ 1922 pts/4    S+     0:00 .././sh61 -q
+ 1923 pts/4    S+     0:00 .././sh61 -q
+ 1926 pts/4    S+     0:00 sleep 0.1
+ 1927 pts/4    R+     0:00 ps T
+32111 pts/4    Ss     0:00 -bash
+  PID TTY      STAT   TIME COMMAND
+ 1542 pts/4    S      0:00 make check
+ 1574 pts/4    S      0:00 perl check.pl
+ 1923 pts/4    S+     0:00 .././sh61 -q
+ 1928 pts/4    R+     0:00 ps T
+32111 pts/4    Ss     0:00 -bash
